@@ -22,7 +22,7 @@ class Scraper
 
   def get_courses
     courses = get_page.css(".post-holder h2")
-    puts courses.class
+    puts courses.inspect
     # courses.each do |course|
     #   course
     # end
