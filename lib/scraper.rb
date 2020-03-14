@@ -22,7 +22,7 @@ class Scraper
 
   def get_courses
     courses = get_page.to_xml
-    puts course.class
+    puts courses.class
     # courses.collect do |course|
     #   course
     # end
