@@ -22,6 +22,8 @@ class Scraper
 
   def get_courses
     courses = get_page.css("h2")
-    
+    courses.collect do |course|
+      Nokogiri::XML(course)
+    end
   end
 end
