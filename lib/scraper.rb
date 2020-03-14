@@ -27,4 +27,8 @@ class Scraper
     #   Nokogiri::XML(course)
     # end
   end
+
+  def make_courses
+
+  end
 end
