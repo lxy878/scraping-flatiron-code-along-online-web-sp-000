@@ -21,7 +21,8 @@ class Scraper
   end
 
   def get_courses
-    courses = Nokogiri::XML(get_page)
+    courses = get_page.to_xml
+    puts course.class
     # courses.collect do |course|
     #   course
     # end
