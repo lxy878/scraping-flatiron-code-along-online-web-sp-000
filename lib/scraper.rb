@@ -25,10 +25,10 @@ class Scraper
   end
 
   def make_courses
-    get_courses
-    # get_courses.each do |course|
-    #   new_course = Course.new
-    #
-    # end
+    get_courses.each do |course|
+      new_course = Course.new
+      puts course.css("h2")
+
+    end
   end
 end
